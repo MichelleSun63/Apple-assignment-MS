@@ -1,26 +1,25 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import Bottom from "./Bottom";
-import List from "./List";
-function Display(props) {
+import Bottom from "../Bottom";
+import List from "../List"
+function MainPage(props) {
   useEffect(() => {
     props.setData();
   });
 
   return (
     <div>
-      <List
-        title="My List"
-        data={props.mytitles}
-        method={props.removeData}
-        button="remove"
-      />
+     
+     <List title="My List"
+     data={props.mytitles}
+     method={props.removeData}
+     button="remove"
+     />
 
-      <List
-        title="Recmendations"
-        data={props.rectitles}
-        method={props.addData}
-        button="add"
+      <List title="Recmendations"
+      data={props.rectitles}
+      method={props.addData}
+      button="add"
       />
 
       <Bottom />
@@ -54,4 +53,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Display);
+export default connect(mapStateToProps, mapDispatchToProps)(MainPage);
