@@ -3,11 +3,11 @@ export default function List(props) {
   return (
     <div>
       <h4>{props.title}</h4>
-      {props.data.map((it) => (
-        <div key={it.id}>
-          <img src={it.img} alt="movie image" />
-          {it.title}
-          <button onClick={() => props.method(it)}>{props.button}</button>
+      {props.data.map((item) => (
+        <div key={item.id}>
+          <img src={item.img} alt="movie image" />
+          {item.title}
+          <button onClick={() => props.method(item)}>{props.button}</button>
         </div>
       ))}
     </div>

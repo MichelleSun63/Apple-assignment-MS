@@ -1,11 +1,11 @@
 import * as actions from "./actionConstants";
 
-export const addItem = (it) => {
-  return { type: actions.ADD_DATA, it };
+export const addItem = (item) => {
+  return { type: actions.ADD_DATA, payload: item };
 };
 
-export const removeItem = (it) => {
-  return { type: actions.REMOVE_DATA, it };
+export const removeItem = (item) => {
+  return { type: actions.REMOVE_DATA, payload: item };
 };
 
 export const setItem = () => {

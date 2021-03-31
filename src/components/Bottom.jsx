@@ -7,8 +7,8 @@ function Bottom(props) {
     <>
       <h4>My List is as Below</h4>
       <div className="mylist-names">
-        {mytitles.map((it) => (
-          <div key={it.id}>{it.title}</div>
+        {mytitles.map((item) => (
+          <div key={item.id}>{item.title}</div>
         ))}
       </div>
     </>

@@ -39,8 +39,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addData: (it) => dispatch(actionfunc.addItem(it)),
-    removeData: (it) => dispatch(actionfunc.removeItem(it)),
+    addData: (item) => dispatch(actionfunc.addItem(item)),
+    removeData: (item) => dispatch(actionfunc.removeItem(item)),
     setData: () => dispatch(actionfunc.setItem())
   };
 };
