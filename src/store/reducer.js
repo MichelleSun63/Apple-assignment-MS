@@ -1,4 +1,4 @@
-import * as actions from "./actionDeclare";
+import * as actions from "../actions/actionConstants";
 
 const defaultStates = {
   mytitles: [],

@@ -1,4 +1,4 @@
-import * as actions from "./actionDeclare";
+import * as actions from "./actionConstants";
 
 export const addItem = (it) => {
   return { type: actions.ADD_DATA, it };

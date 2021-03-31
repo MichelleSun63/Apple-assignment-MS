@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import * as actionfunc from "../redux/actions";
+import * as actionfunc from "../actions/actions";
 
 import { connect } from "react-redux";
 import Bottom from "../components/Bottom";
