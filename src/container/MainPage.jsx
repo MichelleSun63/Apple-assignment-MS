@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import * as actionfunc from "../../redux/actions";
+import * as actionfunc from "../redux/actions";
 
 import { connect } from "react-redux";
-import Bottom from "../Bottom";
-import List from "../List";
+import Bottom from "../components/Bottom";
+import List from "../components/List";
 function MainPage(props) {
   useEffect(() => {
     props.setData();
